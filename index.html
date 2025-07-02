@@ -19,22 +19,78 @@
     <noscript
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      @keyframes gradient-x {
+        0%,
+        100% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+      }
+      .animate-gradient {
+        background-size: 200% 200%;
+        animation: gradient-x 6s ease infinite;
+      }
+    </style>
   </head>
   <body class="is-preload">
     <div id="wrapper" class="fade-in">
-      <div id="intro">
-        <h1>Hi, I'm <span id="typed"></span></h1>
-        <p>
-          Graduate Engineer Trainee | MERN Stack Developer | Tech Enthusiast
-        </p>
-        <ul class="actions">
-          <li>
-            <a href="#main" class="button icon solid solo fa-arrow-down scrolly"
-              >Explore</a
+      <!-- Hero Section -->
+      <section
+        id="intro"
+        class="min-h-screen bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364] flex flex-col items-center justify-center text-white px-6 py-16 text-center"
+      >
+        <div class="max-w-4xl mx-auto">
+          <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
+  Hi, I'm
+  <span id="typed-text" class="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-pink-500 to-purple-600"></span>
+</h1>
+
+
+          <h2 class="text-lg sm:text-xl md:text-2xl font-semibold mb-6">
+            Graduate Engineer Trainee @ Mantra Softech
+          </h2>
+          <p class="text-base sm:text-lg md:text-xl text-gray-300 mb-8">
+            Full Stack Developer (MERN) passionate about building scalable web
+            apps.<br />
+            Java lover, UI/UX enthusiast & continuous learner.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4 mb-10">
+            <a
+  href="#"
+  onclick="activateTab('projects')"
+  class="px-6 py-3 bg-cyan-400 text-black rounded-full font-medium hover:bg-cyan-300 transition"
+>
+  View My Work
+</a>
+
+            <a
+              href="https://drive.google.com/file/d/11jOx4L2-ywqjyOyl8O-RPsAXRBZRDOR7/view?usp=sharing"
+              alt="_blank"
+              download
+              class="px-6 py-3 border border-white rounded-full font-medium hover:bg-white hover:text-black transition"
             >
-          </li>
-        </ul>
-      </div>
+              Download Resume
+            </a>
+          </div>
+          <div class="text-sm text-gray-400 flex flex-wrap justify-center gap-4 items-center mt-4">
+  <span class="flex items-center gap-2">
+    <i class="fas fa-map-marker-alt text-pink-500"></i>Muzaffarpur
+  </span>
+  <span class="flex items-center gap-2">
+    <i class="fas fa-phone text-red-500"></i>6203442712
+  </span>
+  <span class="flex items-center gap-2">
+    <i class="fas fa-envelope text-blue-400"></i>omkr01987@gmail.com
+  </span>
+</div>
+
+          </div>
+        </div>
+      </section>
 
       <header id="header">
         <a href="index.html" class="logo">Om Kumar</a>
@@ -75,186 +131,254 @@
 
       <div id="main">
         <div class="tab-content active" id="about">
-          <div class="card">
-            <h2><i class="fas fa-user-circle"></i> About Me</h2>
-            <p>
-              Hello! I'm <strong>Om Kumar</strong>, a passionate
-              <span class="highlight">Full-Stack Developer</span> currently
-              pursuing <strong>B.Tech in Information Technology</strong> from
-              MIT Muzaffarpur.
-            </p>
-            <p>
-              I’ve recently joined
-              <strong>Mantra Softech India Pvt. Ltd.</strong> in Ahmedabad,
-              Gujarat as a <strong>Graduate Engineer Trainee</strong>.
-            </p>
-            <p>
-              I enjoy working with modern web technologies and building
-              practical, scalable solutions using the
-              <strong>MERN stack</strong>.
-            </p>
-            <ul class="icon-list">
-              <li>
-                <i class="fas fa-graduation-cap"></i> B.Tech IT @ MIT
-                Muzaffarpur
-              </li>
-              <li>
-                <i class="fas fa-briefcase"></i> Graduate Engineer Trainee @
-                Mantra Softech
-              </li>
-              <li>
-                <i class="fas fa-map-marker-alt"></i> Based in Ahmedabad,
-                Gujarat
-              </li>
-              <li>
-                <i class="fas fa-rocket"></i> Exploring Web 3.0, AI tools & Tech
-                Communities
-              </li>
-            </ul>
-          </div>
-        </div>
+          <section
+            class="min-h-screen bg-gradient-to-br from-[#0f172a] via-[#1e293b] to-[#0f172a] text-white flex flex-col justify-center items-center px-6 py-20"
+          >
+            <!-- Typewriter Heading -->
+            <div class="mb-8 text-center">
+              <h1 class="text-4xl sm:text-5xl font-bold mb-4">
+                <span
+                  id="typewriter"
+                  class="border-r-4 border-white pr-1"
+                ></span>
+              </h1>
+            </div>
 
-        <div class="tab-content" id="skills">
-          <div class="card">
-            <h2><i class="fas fa-tools"></i> Skills</h2>
-            <div class="skills-grid">
-              <div class="skill-box">
-                <i class="fas fa-code skill-icon"></i>
-                <h3>Languages</h3>
-                <p>Java, C++, JavaScript</p>
+            <!-- Description -->
+            <div class="max-w-3xl text-center mb-12">
+              <p class="text-lg md:text-xl leading-relaxed text-slate-100">
+                I'm a skilled software developer with experience in
+                <span class="text-white font-semibold">Java</span>,
+                <span class="text-white font-semibold">C++</span>, and
+                <span class="text-white font-semibold">JavaScript</span>, and
+                expertise in frameworks like
+                <span class="text-cyan-300">React.js</span>,
+                <span class="text-green-300">Node.js</span>, and full-stack
+                development with the
+                <span class="text-yellow-300">MERN stack</span>. <br /><br />
+                I’m a quick learner who collaborates with clients to create
+                efficient, scalable, and user-friendly solutions.
+              </p>
+              <p class="mt-6 text-cyan-300 font-semibold text-lg">
+                Let’s work together to bring your ideas to life!
+              </p>
+            </div>
+
+            <!-- Contact Info in Single Line -->
+            <div
+              class="flex flex-wrap justify-center items-center gap-4 text-sm text-gray-300 mb-10"
+            >
+              <span class="flex items-center gap-1"
+                ><i class="fas fa-map-marker-alt text-cyan-300"></i>
+                Muzaffarpur, Bihar</span
+              >
+              <span class="flex items-center gap-1"
+                ><i class="fas fa-phone-alt text-cyan-300"></i> +91
+                6203442712</span
+              >
+              <span class="flex items-center gap-1"
+                ><i class="fas fa-envelope text-cyan-300"></i>
+                omkr01987@gmail.com</span
+              >
+            </div>
+
+            <!-- Skills Grid -->
+            <div
+              class="grid grid-cols-2 sm:grid-cols-3 gap-6 max-w-4xl w-full px-4"
+            >
+              <div
+                class="bg-[#1e293b] hover:shadow-[0_0_25px_#22d3ee] transition rounded-xl p-6 text-center"
+              >
+                <i class="fas fa-laptop-code text-3xl text-cyan-400 mb-4"></i>
+                <h3 class="font-semibold text-sm tracking-wide text-white">
+                  WEB DEVELOPER
+                </h3>
               </div>
-              <div class="skill-box">
-                <i class="fas fa-paint-brush skill-icon"></i>
-                <h3>Frontend</h3>
-                <p>React.js, HTML5, CSS3, Bootstrap, Tailwind CSS</p>
+              <div
+                class="bg-[#1e293b] hover:shadow-[0_0_25px_#f472b6] transition rounded-xl p-6 text-center"
+              >
+                <i class="fab fa-react text-3xl text-pink-400 mb-4"></i>
+                <h3 class="font-semibold text-sm tracking-wide text-white">
+                  REACT DEVELOPER
+                </h3>
               </div>
-              <div class="skill-box">
-                <i class="fas fa-server skill-icon"></i>
-                <h3>Backend</h3>
-                <p>Node.js, Express.js, MongoDB, Appwrite</p>
-              </div>
-              <div class="skill-box">
-                <i class="fas fa-tools skill-icon"></i>
-                <h3>Tools & Platforms</h3>
-                <p>Git, GitHub, VS Code, Linux, Firebase, Netlify, AWS</p>
-              </div>
-              <div class="skill-box">
-                <i class="fas fa-pencil-ruler skill-icon"></i>
-                <h3>UI/UX Design</h3>
-                <p>Figma, Canva, Photoshop</p>
-              </div>
-              <div class="skill-box">
-                <i class="fas fa-users skill-icon"></i>
-                <h3>Soft Skills</h3>
-                <p>Teamwork, Communication, Problem Solving, Leadership</p>
+              <div
+                class="bg-[#1e293b] hover:shadow-[0_0_25px_#4ade80] transition rounded-xl p-6 text-center"
+              >
+                <i class="fas fa-server text-3xl text-green-300 mb-4"></i>
+                <h3 class="font-semibold text-sm tracking-wide text-white">
+                  BACKEND DEVELOPER
+                </h3>
               </div>
             </div>
-          </div>
+          </section>
         </div>
+
+        <div class="tab-content skills-section" id="skills">
+  <div class="card bg-[#0f172a] text-white py-12">
+    <h2 class="text-3xl font-bold text-center mb-8 text-cyan-400">🧠 Skills</h2>
+
+    <div class="max-w-6xl mx-auto px-6 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 justify-center items-center">
+      <!-- skill icon box -->
+      <div class="flex flex-col items-center group skill-item">
+        <img src="assets/icons/html5-logo-png.webp" alt="HTML5" class="w-16 h-16 transition-transform duration-300 transform group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_#f97316]" />
+        <span class="mt-2 text-sm font-semibold text-[#f97316]">HTML5</span>
+      </div>
+
+      <div class="flex flex-col items-center group skill-item">
+        <img src="assets/icons/css logo.webp" alt="CSS3" class="w-16 h-16 transition-transform duration-300 transform group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_#3b82f6]" />
+        <span class="mt-2 text-sm font-semibold text-[#3b82f6]">CSS3</span>
+      </div>
+
+      <div class="flex flex-col items-center group skill-item">
+        <img src="assets/icons/js logo.webp" alt="JavaScript" class="w-16 h-16 transition-transform duration-300 transform group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_#facc15]" />
+        <span class="mt-2 text-sm font-semibold text-[#facc15]">JavaScript</span>
+      </div>
+
+      <div class="flex flex-col items-center group skill-item">
+        <img src="assets/icons/React-Logo-PNG.webp" alt="React" class="w-16 h-16 transition-transform duration-300 transform group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_#38bdf8]" />
+        <span class="mt-2 text-sm font-semibold text-[#38bdf8]">React</span>
+      </div>
+
+      <div class="flex flex-col items-center group skill-item">
+        <img src="assets/icons/node-js-logo-png.webp" alt="Node.js" class="w-16 h-16 transition-transform duration-300 transform group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_#4ade80]" />
+        <span class="mt-2 text-sm font-semibold text-[#22c55e]">Node.js</span>
+      </div>
+
+      <div class="flex flex-col items-center group skill-item">
+        <img src="assets/icons/mongodb-logo-png.webp" alt="MongoDB" class="w-16 h-16 transition-transform duration-300 transform group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_#10b981]" />
+        <span class="mt-2 text-sm font-semibold text-[#10b981]">MongoDB</span>
+      </div>
+
+      <!-- Add more like Redux, Git, Tailwind, Figma, etc -->
+    </div>
+  </div>
+</div>
+
 
         <div class="tab-content" id="education">
-          <div class="card">
-            <h2><i class="fas fa-graduation-cap"></i> Education</h2>
-            <div class="timeline">
-              <div class="timeline-item">
-                <h3>MIT Muzaffarpur</h3>
-                <p class="subhead">
-                  B.Tech in Information Technology (2021 – 2025)
-                </p>
-                <p><strong>CGPA:</strong> 8.04</p>
-              </div>
-              <div class="timeline-item">
-                <h3>JNV Katihar</h3>
-                <p class="subhead">Intermediate (2018 – 2020)</p>
-                <p><strong>Percentage:</strong> 84%</p>
-              </div>
-              <div class="timeline-item">
-                <h3>JNV Katihar</h3>
-                <p class="subhead">Matriculation (2017 – 2018)</p>
-                <p><strong>Percentage:</strong> 89.8%</p>
-              </div>
-            </div>
+  <div class="py-12 px-4 bg-[#1e1b4b] text-white rounded-lg">
+    <h2 class="text-3xl font-bold text-center text-blue-300 mb-10">
+      <i class="fas fa-graduation-cap mr-2"></i>Education
+    </h2>
+
+    <div class="max-w-4xl mx-auto space-y-6">
+
+      <!-- B.Tech -->
+      <div class="bg-[#312e81] p-6 rounded-xl shadow-md border border-blue-500">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="text-xl font-bold text-white">Bachelor of Technology</h3>
+            <p class="text-gray-200">Information Technology</p>
+            <p class="text-sm text-gray-300">Muzaffarpur Institute of Technology</p>
+            <p class="text-sm text-gray-300">2021 – 2025</p>
+          </div>
+          <div class="bg-blue-600 text-sm text-white px-3 py-1 rounded-full font-semibold">
+            8.04 CGPA
           </div>
         </div>
+        <p class="mt-2 text-right text-gray-400 text-sm">Muzaffarpur</p>
+      </div>
+
+      <!-- Intermediate -->
+      <div class="bg-[#312e81] p-6 rounded-xl shadow-md border border-blue-500">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="text-xl font-bold text-white">Intermediate</h3>
+            <p class="text-gray-200">Science</p>
+            <p class="text-sm text-gray-300">Jawahar Navodaya Vidyalaya Kolasi</p>
+            <p class="text-sm text-gray-300">2018 – 2020</p>
+          </div>
+          <div class="bg-blue-600 text-sm text-white px-3 py-1 rounded-full font-semibold">
+            84%
+          </div>
+        </div>
+        <p class="mt-2 text-right text-gray-400 text-sm">Katihar</p>
+      </div>
+
+      <!-- Matriculation -->
+      <div class="bg-[#312e81] p-6 rounded-xl shadow-md border border-blue-500">
+        <div class="flex items-center justify-between">
+          <div>
+            <h3 class="text-xl font-bold text-white">Matriculation</h3>
+            <p class="text-gray-200">General</p>
+            <p class="text-sm text-gray-300">Jawahar Navodaya Vidyalaya Kolasi</p>
+            <p class="text-sm text-gray-300">2017 – 2018</p>
+          </div>
+          <div class="bg-blue-600 text-sm text-white px-3 py-1 rounded-full font-semibold">
+            89.8%
+          </div>
+        </div>
+        <p class="mt-2 text-right text-gray-400 text-sm">Katihar</p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
 
         <div class="tab-content" id="projects">
-          <div class="card">
-            <h2><i class="fas fa-code"></i> Projects</h2>
-            <div class="project-grid">
-              <!-- Project 1 -->
-              <div class="project-card">
-                <img src="images/techmiti.png" alt="TechMITi" />
-                <div class="project-content">
-                  <h3>🚀 TechMITi’25</h3>
-                  <p>
-                    MERN-based event website with user auth, admin panel, AWS
-                    uploads, and registration system.
-                  </p>
-                  <a
-                    href="https://techmit25.onrender.com/"
-                    class="button"
-                    target="_blank"
-                    >Live Demo</a
-                  >
-                </div>
-              </div>
-
-              <!-- Project 2 -->
-              <div class="project-card">
-                <img src="images/portfolio.png" alt="3D Portfolio" />
-                <div class="project-content">
-                  <h3>🧠 3D Developer Portfolio</h3>
-                  <p>
-                    Interactive developer site using React Three Fiber, Framer
-                    Motion, and EmailJS.
-                  </p>
-                  <a
-                    href="https://github.com/Om01987/3D_Portfolio"
-                    class="button"
-                    target="_blank"
-                    >Source Code</a
-                  >
-                </div>
-              </div>
-
-              <!-- Project 3 -->
-              <div class="project-card">
-                <img src="images/easygo.png" alt="EasyGo App" />
-                <div class="project-content">
-                  <h3>🚑 EasyGo Ride & Emergency App</h3>
-                  <p>
-                    Real-time ride booking app with Google Maps, MERN stack, and
-                    WebSockets.
-                  </p>
-                  <a
-                    href="https://github.com/mohan03366/Riding-App"
-                    class="button"
-                    target="_blank"
-                    >Source Code</a
-                  >
-                </div>
-              </div>
-
-              <!-- Project 4 -->
-              <div class="project-card">
-                <img src="images/brainwave.png" alt="Movie App" />
-                <div class="project-content">
-                  <h3>🎬 Brain Wave</h3>
-                  <p>
-                    React + TMDB app with debounced search, trending algorithm,
-                    and Appwrite backend.
-                  </p>
-                  <a
-                    href="https://github.com/Om01987/Movie_App"
-                    class="button"
-                    target="_blank"
-                    >Source Code</a
-                  >
-                </div>
-              </div>
-            </div>
+  <div class="card">
+    <h2><i class="fas fa-code"></i> Projects</h2>
+    <div class="project-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+        <img src="images/techmiti.png" alt="TechMITi" />
+        <div class="project-content">
+          <h3>🚀 TechMITi’25</h3>
+          <p>
+            MERN-based event website with user auth, admin panel, AWS uploads, and registration system.
+          </p>
+          <div class="badges">
+            <span>MERN</span><span>Tailwind</span><span>AWS</span>
           </div>
+          <a href="https://techmit25.onrender.com/" class="btn primary" target="_blank">Live Demo</a>
         </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <img src="images/portfolio.png" alt="3D Portfolio" />
+        <div class="project-content">
+          <h3>🧠 3D Developer Portfolio</h3>
+          <p>Interactive site using React Three Fiber, Framer Motion, and EmailJS.</p>
+          <div class="badges">
+            <span>React</span><span>ThreeJS</span><span>EmailJS</span>
+          </div>
+          <a href="https://github.com/Om01987/3D_Portfolio" class="btn secondary" target="_blank">Source Code</a>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <img src="images/easygo.png" alt="EasyGo App" />
+        <div class="project-content">
+          <h3>🚑 EasyGo Ride & Emergency App</h3>
+          <p>Real-time ride booking app with Google Maps, MERN stack, and WebSockets.</p>
+          <div class="badges">
+            <span>React</span><span>Maps API</span><span>WebSocket</span>
+          </div>
+          <a href="https://github.com/mohan03366/Riding-App" class="btn secondary" target="_blank">Source Code</a>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card">
+        <img src="images/brainwave.png" alt="BrainWave" />
+        <div class="project-content">
+          <h3>🎬 Brain Wave</h3>
+          <p>TMDB-powered React app with trending algorithm and Appwrite backend.</p>
+          <div class="badges">
+            <span>React</span><span>TMDB</span><span>Appwrite</span>
+          </div>
+          <a href="https://github.com/Om01987/Movie_App" class="btn secondary" target="_blank">Source Code</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
         <div class="tab-content" id="experience">
           <div class="card">
@@ -325,37 +449,32 @@
         </div>
 
         <div class="tab-content" id="contact">
-          <div class="card">
-            <h2><i class="fas fa-envelope-open-text"></i> Get in Touch</h2>
-            <p>
-              Whether you have a project idea, want to collaborate, or just want
-              to say hi — feel free to reach out!
-            </p>
+  <div class="card contact-card">
+    <h2><i class="fas fa-envelope-open-text"></i> Get in Touch</h2>
+    <p class="contact-description">
+      Whether you have a project idea, want to collaborate, or just want to say hi — feel free to reach out!
+    </p>
+    <ul class="contact-list">
+      <li>
+        <i class="fas fa-envelope"></i>
+        <a href="mailto:omkr01987@gmail.com">omkr01987@gmail.com</a>
+      </li>
+      <li>
+        <i class="fas fa-phone"></i>
+        <a href="tel:+916203442712">+91-6203442712</a>
+      </li>
+      <li>
+        <i class="fab fa-linkedin"></i>
+        <a href="https://linkedin.com/in/om1987" target="_blank">linkedin.com/in/om1987</a>
+      </li>
+      <li>
+        <i class="fab fa-github"></i>
+        <a href="https://github.com/Om01987" target="_blank">github.com/Om01987</a>
+      </li>
+    </ul>
+  </div>
+</div>
 
-            <ul class="contact-list">
-              <li>
-                <i class="fas fa-envelope"></i>
-                <a href="mailto:omkr01987@gmail.com">omkr01987@gmail.com</a>
-              </li>
-              <li>
-                <i class="fas fa-phone"></i>
-                <a href="tel:+916203442712">+91-6203442712</a>
-              </li>
-              <li>
-                <i class="fab fa-linkedin"></i>
-                <a href="https://linkedin.com/in/om1987" target="_blank"
-                  >linkedin.com/in/om1987</a
-                >
-              </li>
-              <li>
-                <i class="fab fa-github"></i>
-                <a href="https://github.com/Om01987" target="_blank"
-                  >github.com/Om01987</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
 
       <footer id="footer">
@@ -415,5 +534,40 @@
         });
       });
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script>
+  var typed = new Typed("#typed-text", {
+    strings: ["Om Kumar", "a Web Developer", "a Graduate Engineer Trainee"],
+    typeSpeed: 80,
+    backSpeed: 50,
+    backDelay: 1200,
+    loop: true,
+    smartBackspace: true,
+    showCursor: true,
+    cursorChar: "|"
+  });
+</script>
+
+<script>
+  function activateTab(tabId) {
+    // Remove 'active' class from all tabs and contents
+    document.querySelectorAll(".tab-nav li").forEach(tab => tab.classList.remove("active"));
+    document.querySelectorAll(".tab-content").forEach(content => content.classList.remove("active"));
+
+    // Add 'active' to selected tab
+    const selectedTab = document.querySelector(`.tab-nav li[data-tab="${tabId}"]`);
+    const selectedContent = document.getElementById(tabId);
+
+    if (selectedTab && selectedContent) {
+      selectedTab.classList.add("active");
+      selectedContent.classList.add("active");
+
+      // Scroll into view
+      document.querySelector("#main").scrollIntoView({ behavior: "smooth" });
+    }
+  }
+</script>
+
+
   </body>
 </html>
