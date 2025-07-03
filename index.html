@@ -9,9 +9,10 @@
     />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap"
       rel="stylesheet"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -20,6 +21,7 @@
       ><link rel="stylesheet" href="assets/css/noscript.css"
     /></noscript>
     <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
       @keyframes gradient-x {
         0%,
@@ -44,50 +46,65 @@
         class="min-h-screen bg-gradient-to-br from-[#0f2027] via-[#203a43] to-[#2c5364] flex flex-col items-center justify-center text-white px-6 py-16 text-center"
       >
         <div class="max-w-4xl mx-auto">
-          <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
-  Hi, I'm
-  <span id="typed-text" class="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-pink-500 to-purple-600"></span>
-</h1>
+          <!-- Heading with Typed Effect -->
+          <h1
+            class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight tracking-wide font-[Poppins] mb-4"
+          >
+            HI, I'M
+            <span
+              id="typed-text"
+              class="ml-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-pink-500 to-purple-600 font-bold"
+            ></span>
+          </h1>
 
-
-          <h2 class="text-lg sm:text-xl md:text-2xl font-semibold mb-6">
-            Graduate Engineer Trainee @ Mantra Softech
+          <!-- Subtitle -->
+          <h2 class="text-base sm:text-lg md:text-xl font-semibold mb-6">
+            GRADUATE ENGINEER TRAINEE @ MANTRA SOFTECH
           </h2>
-          <p class="text-base sm:text-lg md:text-xl text-gray-300 mb-8">
-            Full Stack Developer (MERN) passionate about building scalable web
-            apps.<br />
-            Java lover, UI/UX enthusiast & continuous learner.
-          </p>
-          <div class="flex flex-col sm:flex-row justify-center gap-4 mb-10">
-            <a
-  href="#"
-  onclick="activateTab('projects')"
-  class="px-6 py-3 bg-cyan-400 text-black rounded-full font-medium hover:bg-cyan-300 transition"
->
-  View My Work
-</a>
 
+          <!-- Description -->
+          <p
+            class="text-sm sm:text-base md:text-lg text-gray-300 font-light leading-relaxed max-w-2xl mx-auto mb-8"
+          >
+            Full Stack Developer (MERN) building scalable & efficient web apps.
+            <br class="hidden sm:block" />
+            Passionate about <span class="text-blue-400">Java</span>, beautiful
+            <span class="text-pink-400">UI/UX</span>, and solving real-world
+            problems.
+          </p>
+
+          <!-- Buttons -->
+          <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+            <a
+              href="#"
+              onclick="activateTab('projects')"
+              class="px-6 py-3 bg-cyan-400 text-black rounded-full font-medium hover:bg-cyan-300 transition"
+            >
+              View My Work
+            </a>
             <a
               href="https://drive.google.com/file/d/11jOx4L2-ywqjyOyl8O-RPsAXRBZRDOR7/view?usp=sharing"
-              alt="_blank"
-              download
               class="px-6 py-3 border border-white rounded-full font-medium hover:bg-white hover:text-black transition"
+              target="_blank"
+              download
             >
               Download Resume
             </a>
           </div>
-          <div class="text-sm text-gray-400 flex flex-wrap justify-center gap-4 items-center mt-4">
-  <span class="flex items-center gap-2">
-    <i class="fas fa-map-marker-alt text-pink-500"></i>Muzaffarpur
-  </span>
-  <span class="flex items-center gap-2">
-    <i class="fas fa-phone text-red-500"></i>6203442712
-  </span>
-  <span class="flex items-center gap-2">
-    <i class="fas fa-envelope text-blue-400"></i>omkr01987@gmail.com
-  </span>
-</div>
 
+          <!-- Contact Info -->
+          <div
+            class="text-xs sm:text-sm text-gray-400 flex flex-wrap justify-center gap-4 items-center"
+          >
+            <span class="flex items-center gap-1">
+              <i class="fas fa-map-marker-alt text-pink-500"></i> Muzaffarpur
+            </span>
+            <span class="flex items-center gap-1">
+              <i class="fas fa-phone text-red-500"></i> 6203442712
+            </span>
+            <span class="flex items-center gap-1">
+              <i class="fas fa-envelope text-blue-400"></i> omkr01987@gmail.com
+            </span>
           </div>
         </div>
       </section>
@@ -96,38 +113,60 @@
         <a href="index.html" class="logo">Om Kumar</a>
       </header>
 
-      <nav id="nav">
-        <ul class="tab-nav links">
-          <li class="active" data-tab="about"><a href="#">About</a></li>
-          <li data-tab="skills"><a href="#">Skills</a></li>
-          <li data-tab="education"><a href="#">Education</a></li>
-          <li data-tab="projects"><a href="#">Projects</a></li>
-          <li data-tab="experience"><a href="#">Experience</a></li>
-          <li data-tab="resume"><a href="#">Resume</a></li>
-          <li data-tab="contact"><a href="#">Contact</a></li>
-        </ul>
-        <ul class="icons">
-          <li>
-            <a
-              href="https://linkedin.com/in/om1987"
-              class="icon brands fa-linkedin"
-              ><span class="label">LinkedIn</span></a
-            >
-          </li>
-          <li>
-            <a href="https://github.com/Om01987" class="icon brands fa-github"
-              ><span class="label">GitHub</span></a
-            >
-          </li>
-          <li>
-            <a
-              href="https://leetcode.com/u/omkr01987/"
-              class="icon brands fa-code"
-              ><span class="label">LeetCode</span></a
-            >
-          </li>
-        </ul>
-      </nav>
+      <div>
+        <nav id="nav">
+          <ul class="tab-nav links">
+            <li class="active" data-tab="about"><a href="#">About</a></li>
+            <li data-tab="skills"><a href="#">Skills</a></li>
+            <li data-tab="education"><a href="#">Education</a></li>
+            <li data-tab="projects"><a href="#">Projects</a></li>
+            <li data-tab="experience"><a href="#">Experience</a></li>
+            <li data-tab="resume"><a href="#">Resume</a></li>
+            <li data-tab="contact"><a href="#">Contact</a></li>
+          </ul>
+          <ul class="icons">
+            <li>
+              <a
+                href="https://linkedin.com/in/om1987"
+                class="icon brands fa-linkedin"
+                ><span class="label">LinkedIn</span></a
+              >
+            </li>
+            <li>
+              <a href="https://github.com/Om01987" class="icon brands fa-github"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://leetcode.com/u/omkr01987/"
+                class="icon brands fa-code"
+                ><span class="label">LeetCode</span></a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- ✅ Mobile Slide-in Navigation Panel -->
+      <div id="navPanel">
+        <nav>
+          <ul class="links">
+            <li><a href="#" onclick="activateTab('about')">About</a></li>
+            <li><a href="#" onclick="activateTab('skills')">Skills</a></li>
+            <li>
+              <a href="#" onclick="activateTab('education')">Education</a>
+            </li>
+            <li><a href="#" onclick="activateTab('projects')">Projects</a></li>
+            <li>
+              <a href="#" onclick="activateTab('experience')">Experience</a>
+            </li>
+            <li><a href="#" onclick="activateTab('resume')">Resume</a></li>
+            <li><a href="#" onclick="activateTab('contact')">Contact</a></li>
+          </ul>
+          <a class="close" href="#"></a>
+        </nav>
+      </div>
 
       <div id="main">
         <div class="tab-content active" id="about">
@@ -215,170 +254,255 @@
         </div>
 
         <div class="tab-content skills-section" id="skills">
-  <div class="card bg-[#0f172a] text-white py-12">
-    <h2 class="text-3xl font-bold text-center mb-8 text-cyan-400">🧠 Skills</h2>
+          <div class="card bg-[#0f172a] text-white py-12">
+            <h2 class="text-3xl font-bold text-center mb-8 text-cyan-400">
+              🧠 Skills
+            </h2>
 
-    <div class="max-w-6xl mx-auto px-6 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 justify-center items-center">
-      <!-- skill icon box -->
-      <div class="flex flex-col items-center group skill-item">
-        <img src="assets/icons/html5-logo-png.webp" alt="HTML5" class="w-16 h-16 transition-transform duration-300 transform group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_#f97316]" />
-        <span class="mt-2 text-sm font-semibold text-[#f97316]">HTML5</span>
-      </div>
+            <div
+              class="max-w-6xl mx-auto px-6 grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 justify-center items-center"
+            >
+              <!-- skill icon box -->
+              <div class="flex flex-col items-center group skill-item">
+                <img
+                  src="assets/icons/html5-logo-png.webp"
+                  alt="HTML5"
+                  class="w-16 h-16 transition-transform duration-300 transform group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_#f97316]"
+                />
+                <span class="mt-2 text-sm font-semibold text-[#f97316]"
+                  >HTML5</span
+                >
+              </div>
 
-      <div class="flex flex-col items-center group skill-item">
-        <img src="assets/icons/css logo.webp" alt="CSS3" class="w-16 h-16 transition-transform duration-300 transform group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_#3b82f6]" />
-        <span class="mt-2 text-sm font-semibold text-[#3b82f6]">CSS3</span>
-      </div>
+              <div class="flex flex-col items-center group skill-item">
+                <img
+                  src="assets/icons/css logo.webp"
+                  alt="CSS3"
+                  class="w-16 h-16 transition-transform duration-300 transform group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_#3b82f6]"
+                />
+                <span class="mt-2 text-sm font-semibold text-[#3b82f6]"
+                  >CSS3</span
+                >
+              </div>
 
-      <div class="flex flex-col items-center group skill-item">
-        <img src="assets/icons/js logo.webp" alt="JavaScript" class="w-16 h-16 transition-transform duration-300 transform group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_#facc15]" />
-        <span class="mt-2 text-sm font-semibold text-[#facc15]">JavaScript</span>
-      </div>
+              <div class="flex flex-col items-center group skill-item">
+                <img
+                  src="assets/icons/js logo.webp"
+                  alt="JavaScript"
+                  class="w-16 h-16 transition-transform duration-300 transform group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_#facc15]"
+                />
+                <span class="mt-2 text-sm font-semibold text-[#facc15]"
+                  >JavaScript</span
+                >
+              </div>
 
-      <div class="flex flex-col items-center group skill-item">
-        <img src="assets/icons/React-Logo-PNG.webp" alt="React" class="w-16 h-16 transition-transform duration-300 transform group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_#38bdf8]" />
-        <span class="mt-2 text-sm font-semibold text-[#38bdf8]">React</span>
-      </div>
+              <div class="flex flex-col items-center group skill-item">
+                <img
+                  src="assets/icons/React-Logo-PNG.webp"
+                  alt="React"
+                  class="w-16 h-16 transition-transform duration-300 transform group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_#38bdf8]"
+                />
+                <span class="mt-2 text-sm font-semibold text-[#38bdf8]"
+                  >React</span
+                >
+              </div>
 
-      <div class="flex flex-col items-center group skill-item">
-        <img src="assets/icons/node-js-logo-png.webp" alt="Node.js" class="w-16 h-16 transition-transform duration-300 transform group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_#4ade80]" />
-        <span class="mt-2 text-sm font-semibold text-[#22c55e]">Node.js</span>
-      </div>
+              <div class="flex flex-col items-center group skill-item">
+                <img
+                  src="assets/icons/node-js-logo-png.webp"
+                  alt="Node.js"
+                  class="w-16 h-16 transition-transform duration-300 transform group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_#4ade80]"
+                />
+                <span class="mt-2 text-sm font-semibold text-[#22c55e]"
+                  >Node.js</span
+                >
+              </div>
 
-      <div class="flex flex-col items-center group skill-item">
-        <img src="assets/icons/mongodb-logo-png.webp" alt="MongoDB" class="w-16 h-16 transition-transform duration-300 transform group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_#10b981]" />
-        <span class="mt-2 text-sm font-semibold text-[#10b981]">MongoDB</span>
-      </div>
+              <div class="flex flex-col items-center group skill-item">
+                <img
+                  src="assets/icons/mongodb-logo-png.webp"
+                  alt="MongoDB"
+                  class="w-16 h-16 transition-transform duration-300 transform group-hover:scale-110 group-hover:drop-shadow-[0_0_10px_#10b981]"
+                />
+                <span class="mt-2 text-sm font-semibold text-[#10b981]"
+                  >MongoDB</span
+                >
+              </div>
 
-      <!-- Add more like Redux, Git, Tailwind, Figma, etc -->
-    </div>
-  </div>
-</div>
-
+              <!-- Add more like Redux, Git, Tailwind, Figma, etc -->
+            </div>
+          </div>
+        </div>
 
         <div class="tab-content" id="education">
-  <div class="py-12 px-4 bg-[#1e1b4b] text-white rounded-lg">
-    <h2 class="text-3xl font-bold text-center text-blue-300 mb-10">
-      <i class="fas fa-graduation-cap mr-2"></i>Education
-    </h2>
+          <div class="py-12 px-4 bg-[#1e1b4b] text-white rounded-lg">
+            <h2 class="text-3xl font-bold text-center text-blue-300 mb-10">
+              <i class="fas fa-graduation-cap mr-2"></i>Education
+            </h2>
 
-    <div class="max-w-4xl mx-auto space-y-6">
+            <div class="max-w-4xl mx-auto space-y-6">
+              <!-- B.Tech -->
+              <div
+                class="bg-[#312e81] p-6 rounded-xl shadow-md border border-blue-500"
+              >
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h3 class="text-xl font-bold text-white">
+                      Bachelor of Technology
+                    </h3>
+                    <p class="text-gray-200">Information Technology</p>
+                    <p class="text-sm text-gray-300">
+                      Muzaffarpur Institute of Technology
+                    </p>
+                    <p class="text-sm text-gray-300">2021 – 2025</p>
+                  </div>
+                  <div
+                    class="bg-blue-600 text-sm text-white px-3 py-1 rounded-full font-semibold"
+                  >
+                    8.04 CGPA
+                  </div>
+                </div>
+                <p class="mt-2 text-right text-gray-400 text-sm">Muzaffarpur</p>
+              </div>
 
-      <!-- B.Tech -->
-      <div class="bg-[#312e81] p-6 rounded-xl shadow-md border border-blue-500">
-        <div class="flex items-center justify-between">
-          <div>
-            <h3 class="text-xl font-bold text-white">Bachelor of Technology</h3>
-            <p class="text-gray-200">Information Technology</p>
-            <p class="text-sm text-gray-300">Muzaffarpur Institute of Technology</p>
-            <p class="text-sm text-gray-300">2021 – 2025</p>
-          </div>
-          <div class="bg-blue-600 text-sm text-white px-3 py-1 rounded-full font-semibold">
-            8.04 CGPA
+              <!-- Intermediate -->
+              <div
+                class="bg-[#312e81] p-6 rounded-xl shadow-md border border-blue-500"
+              >
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h3 class="text-xl font-bold text-white">Intermediate</h3>
+                    <p class="text-gray-200">Science</p>
+                    <p class="text-sm text-gray-300">
+                      Jawahar Navodaya Vidyalaya Kolasi
+                    </p>
+                    <p class="text-sm text-gray-300">2018 – 2020</p>
+                  </div>
+                  <div
+                    class="bg-blue-600 text-sm text-white px-3 py-1 rounded-full font-semibold"
+                  >
+                    84%
+                  </div>
+                </div>
+                <p class="mt-2 text-right text-gray-400 text-sm">Katihar</p>
+              </div>
+
+              <!-- Matriculation -->
+              <div
+                class="bg-[#312e81] p-6 rounded-xl shadow-md border border-blue-500"
+              >
+                <div class="flex items-center justify-between">
+                  <div>
+                    <h3 class="text-xl font-bold text-white">Matriculation</h3>
+                    <p class="text-gray-200">General</p>
+                    <p class="text-sm text-gray-300">
+                      Jawahar Navodaya Vidyalaya Kolasi
+                    </p>
+                    <p class="text-sm text-gray-300">2017 – 2018</p>
+                  </div>
+                  <div
+                    class="bg-blue-600 text-sm text-white px-3 py-1 rounded-full font-semibold"
+                  >
+                    89.8%
+                  </div>
+                </div>
+                <p class="mt-2 text-right text-gray-400 text-sm">Katihar</p>
+              </div>
+            </div>
           </div>
         </div>
-        <p class="mt-2 text-right text-gray-400 text-sm">Muzaffarpur</p>
-      </div>
-
-      <!-- Intermediate -->
-      <div class="bg-[#312e81] p-6 rounded-xl shadow-md border border-blue-500">
-        <div class="flex items-center justify-between">
-          <div>
-            <h3 class="text-xl font-bold text-white">Intermediate</h3>
-            <p class="text-gray-200">Science</p>
-            <p class="text-sm text-gray-300">Jawahar Navodaya Vidyalaya Kolasi</p>
-            <p class="text-sm text-gray-300">2018 – 2020</p>
-          </div>
-          <div class="bg-blue-600 text-sm text-white px-3 py-1 rounded-full font-semibold">
-            84%
-          </div>
-        </div>
-        <p class="mt-2 text-right text-gray-400 text-sm">Katihar</p>
-      </div>
-
-      <!-- Matriculation -->
-      <div class="bg-[#312e81] p-6 rounded-xl shadow-md border border-blue-500">
-        <div class="flex items-center justify-between">
-          <div>
-            <h3 class="text-xl font-bold text-white">Matriculation</h3>
-            <p class="text-gray-200">General</p>
-            <p class="text-sm text-gray-300">Jawahar Navodaya Vidyalaya Kolasi</p>
-            <p class="text-sm text-gray-300">2017 – 2018</p>
-          </div>
-          <div class="bg-blue-600 text-sm text-white px-3 py-1 rounded-full font-semibold">
-            89.8%
-          </div>
-        </div>
-        <p class="mt-2 text-right text-gray-400 text-sm">Katihar</p>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
 
         <div class="tab-content" id="projects">
-  <div class="card">
-    <h2><i class="fas fa-code"></i> Projects</h2>
-    <div class="project-grid">
-      <!-- Project 1 -->
-      <div class="project-card">
-        <img src="images/techmiti.png" alt="TechMITi" />
-        <div class="project-content">
-          <h3>🚀 TechMITi’25</h3>
-          <p>
-            MERN-based event website with user auth, admin panel, AWS uploads, and registration system.
-          </p>
-          <div class="badges">
-            <span>MERN</span><span>Tailwind</span><span>AWS</span>
-          </div>
-          <a href="https://techmit25.onrender.com/" class="btn primary" target="_blank">Live Demo</a>
-        </div>
-      </div>
+          <div class="card">
+            <h2><i class="fas fa-code"></i> Projects</h2>
+            <div class="project-grid">
+              <!-- Project 1 -->
+              <div class="project-card">
+                <img src="images/techmiti.png" alt="TechMITi" />
+                <div class="project-content">
+                  <h3>🚀 TechMITi’25</h3>
+                  <p>
+                    MERN-based event website with user auth, admin panel, AWS
+                    uploads, and registration system.
+                  </p>
+                  <div class="badges">
+                    <span>MERN</span><span>Tailwind</span><span>AWS</span>
+                  </div>
+                  <a
+                    href="https://techmit25.onrender.com/"
+                    class="btn primary"
+                    target="_blank"
+                    >Live Demo</a
+                  >
+                </div>
+              </div>
 
-      <!-- Project 2 -->
-      <div class="project-card">
-        <img src="images/portfolio.png" alt="3D Portfolio" />
-        <div class="project-content">
-          <h3>🧠 3D Developer Portfolio</h3>
-          <p>Interactive site using React Three Fiber, Framer Motion, and EmailJS.</p>
-          <div class="badges">
-            <span>React</span><span>ThreeJS</span><span>EmailJS</span>
-          </div>
-          <a href="https://github.com/Om01987/3D_Portfolio" class="btn secondary" target="_blank">Source Code</a>
-        </div>
-      </div>
+              <!-- Project 2 -->
+              <div class="project-card">
+                <img src="images/portfolio.png" alt="3D Portfolio" />
+                <div class="project-content">
+                  <h3>🧠 3D Developer Portfolio</h3>
+                  <p>
+                    Interactive site using React Three Fiber, Framer Motion, and
+                    EmailJS.
+                  </p>
+                  <div class="badges">
+                    <span>React</span><span>ThreeJS</span><span>EmailJS</span>
+                  </div>
+                  <a
+                    href="https://github.com/Om01987/3D_Portfolio"
+                    class="btn secondary"
+                    target="_blank"
+                    >Source Code</a
+                  >
+                </div>
+              </div>
 
-      <!-- Project 3 -->
-      <div class="project-card">
-        <img src="images/easygo.png" alt="EasyGo App" />
-        <div class="project-content">
-          <h3>🚑 EasyGo Ride & Emergency App</h3>
-          <p>Real-time ride booking app with Google Maps, MERN stack, and WebSockets.</p>
-          <div class="badges">
-            <span>React</span><span>Maps API</span><span>WebSocket</span>
-          </div>
-          <a href="https://github.com/mohan03366/Riding-App" class="btn secondary" target="_blank">Source Code</a>
-        </div>
-      </div>
+              <!-- Project 3 -->
+              <div class="project-card">
+                <img src="images/easygo.png" alt="EasyGo App" />
+                <div class="project-content">
+                  <h3>🚑 EasyGo Ride & Emergency App</h3>
+                  <p>
+                    Real-time ride booking app with Google Maps, MERN stack, and
+                    WebSockets.
+                  </p>
+                  <div class="badges">
+                    <span>React</span><span>Maps API</span
+                    ><span>WebSocket</span>
+                  </div>
+                  <a
+                    href="https://github.com/mohan03366/Riding-App"
+                    class="btn secondary"
+                    target="_blank"
+                    >Source Code</a
+                  >
+                </div>
+              </div>
 
-      <!-- Project 4 -->
-      <div class="project-card">
-        <img src="images/brainwave.png" alt="BrainWave" />
-        <div class="project-content">
-          <h3>🎬 Brain Wave</h3>
-          <p>TMDB-powered React app with trending algorithm and Appwrite backend.</p>
-          <div class="badges">
-            <span>React</span><span>TMDB</span><span>Appwrite</span>
+              <!-- Project 4 -->
+              <div class="project-card">
+                <img src="images/brainwave.png" alt="BrainWave" />
+                <div class="project-content">
+                  <h3>🎬 Brain Wave</h3>
+                  <p>
+                    TMDB-powered React app with trending algorithm and Appwrite
+                    backend.
+                  </p>
+                  <div class="badges">
+                    <span>React</span><span>TMDB</span><span>Appwrite</span>
+                  </div>
+                  <a
+                    href="https://github.com/Om01987/Movie_App"
+                    class="btn secondary"
+                    target="_blank"
+                    >Source Code</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
-          <a href="https://github.com/Om01987/Movie_App" class="btn secondary" target="_blank">Source Code</a>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 
         <div class="tab-content" id="experience">
           <div class="card">
@@ -449,32 +573,36 @@
         </div>
 
         <div class="tab-content" id="contact">
-  <div class="card contact-card">
-    <h2><i class="fas fa-envelope-open-text"></i> Get in Touch</h2>
-    <p class="contact-description">
-      Whether you have a project idea, want to collaborate, or just want to say hi — feel free to reach out!
-    </p>
-    <ul class="contact-list">
-      <li>
-        <i class="fas fa-envelope"></i>
-        <a href="mailto:omkr01987@gmail.com">omkr01987@gmail.com</a>
-      </li>
-      <li>
-        <i class="fas fa-phone"></i>
-        <a href="tel:+916203442712">+91-6203442712</a>
-      </li>
-      <li>
-        <i class="fab fa-linkedin"></i>
-        <a href="https://linkedin.com/in/om1987" target="_blank">linkedin.com/in/om1987</a>
-      </li>
-      <li>
-        <i class="fab fa-github"></i>
-        <a href="https://github.com/Om01987" target="_blank">github.com/Om01987</a>
-      </li>
-    </ul>
-  </div>
-</div>
-
+          <div class="card contact-card">
+            <h2><i class="fas fa-envelope-open-text"></i> Get in Touch</h2>
+            <p class="contact-description">
+              Whether you have a project idea, want to collaborate, or just want
+              to say hi — feel free to reach out!
+            </p>
+            <ul class="contact-list">
+              <li>
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:omkr01987@gmail.com">omkr01987@gmail.com</a>
+              </li>
+              <li>
+                <i class="fas fa-phone"></i>
+                <a href="tel:+916203442712">+91-6203442712</a>
+              </li>
+              <li>
+                <i class="fab fa-linkedin"></i>
+                <a href="https://linkedin.com/in/om1987" target="_blank"
+                  >linkedin.com/in/om1987</a
+                >
+              </li>
+              <li>
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/Om01987" target="_blank"
+                  >github.com/Om01987</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <footer id="footer">
@@ -497,17 +625,24 @@
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-      var typed = new Typed("#typed", {
-        strings: ["Om Kumar", "a MERN Developer", "Graduate Eng. Trainee"],
+    <!-- <script>
+      var typed = new Typed("#typed-text", {
+        strings: [
+          "Om Kumar",
+          "a MERN Developer",
+          "a Graduate Engineer Trainee",
+        ],
         typeSpeed: 80,
-        backSpeed: 40,
-        backDelay: 1000,
+        backSpeed: 50,
+        backDelay: 1200,
         loop: true,
+        smartBackspace: true,
+        showCursor: true,
+        cursorChar: "|",
       });
-    </script>
-    <script>
+    </script> -->
+
+    <!-- <script>
       const tabs = document.querySelectorAll(".tab-nav li");
       const contents = document.querySelectorAll(".tab-content");
 
@@ -533,41 +668,135 @@
           }
         });
       });
+    </script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed("#typed-text", {
+        strings: ["Om Kumar", "a Web Developer", "a Graduate Engineer Trainee"],
+        typeSpeed: 80,
+        backSpeed: 50,
+        backDelay: 1200,
+        loop: true,
+        smartBackspace: true,
+        showCursor: true,
+        cursorChar: "|",
+      });
     </script>
+
+    <script>
+      function activateTab(tabId) {
+        // Remove 'active' class from all tabs and contents
+        document
+          .querySelectorAll(".tab-nav li")
+          .forEach((tab) => tab.classList.remove("active"));
+        document
+          .querySelectorAll(".tab-content")
+          .forEach((content) => content.classList.remove("active"));
+
+        // Add 'active' to selected tab and content
+        const selectedTab = document.querySelector(
+          `.tab-nav li[data-tab="${tabId}"]`
+        );
+        const selectedContent = document.getElementById(tabId);
+
+        if (selectedTab && selectedContent) {
+          selectedTab.classList.add("active");
+          selectedContent.classList.add("active");
+
+          // Scroll smoothly into the selected section
+          selectedContent.scrollIntoView({ behavior: "smooth" });
+
+          // Auto close navPanel on mobile
+          document.body.classList.remove("is-navPanel-visible");
+        }
+      }
+    </script> -->
+
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        setTimeout(() => {
+          document.querySelectorAll("#navPanel a").forEach((link) => {
+            link.addEventListener("click", () => {
+              document.body.classList.remove("is-navPanel-visible");
+            });
+          });
+        }, 500);
+      });
+    </script> -->
+    <!-- <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".tab-nav li").forEach((tab) => {
+          tab.addEventListener("click", (e) => {
+            e.preventDefault();
+            const tabId = tab.getAttribute("data-tab");
+            activateTab(tabId);
+          });
+        });
+      });
+    </script> -->
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
-  var typed = new Typed("#typed-text", {
-    strings: ["Om Kumar", "a Web Developer", "a Graduate Engineer Trainee"],
-    typeSpeed: 80,
-    backSpeed: 50,
-    backDelay: 1200,
-    loop: true,
-    smartBackspace: true,
-    showCursor: true,
-    cursorChar: "|"
-  });
-</script>
+    <script>
+      // Typewriter
+      var typed = new Typed("#typed-text", {
+        strings: ["Om Kumar", "a Web Developer", "a Graduate Engineer Trainee"],
+        typeSpeed: 80,
+        backSpeed: 50,
+        backDelay: 1200,
+        loop: true,
+        smartBackspace: true,
+        showCursor: true,
+        cursorChar: "|",
+      });
+    </script>
 
-<script>
-  function activateTab(tabId) {
-    // Remove 'active' class from all tabs and contents
-    document.querySelectorAll(".tab-nav li").forEach(tab => tab.classList.remove("active"));
-    document.querySelectorAll(".tab-content").forEach(content => content.classList.remove("active"));
+    <script>
+      // Master Tab Switch Handler
+      function activateTab(tabId) {
+        // Remove all active classes
+        document
+          .querySelectorAll(".tab-nav li")
+          .forEach((tab) => tab.classList.remove("active"));
+        document
+          .querySelectorAll(".tab-content")
+          .forEach((content) => content.classList.remove("active"));
 
-    // Add 'active' to selected tab
-    const selectedTab = document.querySelector(`.tab-nav li[data-tab="${tabId}"]`);
-    const selectedContent = document.getElementById(tabId);
+        // Activate selected tab and content
+        const selectedTab = document.querySelector(
+          `.tab-nav li[data-tab="${tabId}"]`
+        );
+        const selectedContent = document.getElementById(tabId);
 
-    if (selectedTab && selectedContent) {
-      selectedTab.classList.add("active");
-      selectedContent.classList.add("active");
+        if (selectedTab && selectedContent) {
+          selectedTab.classList.add("active");
+          selectedContent.classList.add("active");
 
-      // Scroll into view
-      document.querySelector("#main").scrollIntoView({ behavior: "smooth" });
-    }
-  }
-</script>
+          // Scroll to content
+          const offset = 100; // adjust this based on your navbar height
+          const elementPosition =
+            selectedContent.getBoundingClientRect().top + window.pageYOffset;
+          window.scrollTo({
+            top: elementPosition - offset,
+            behavior: "smooth",
+          });
 
+          // Close navPanel on mobile
+          document.body.classList.remove("is-navPanel-visible");
+        }
+      }
+    </script>
 
+    <script>
+      // Attach click listeners to desktop menu
+      document.addEventListener("DOMContentLoaded", () => {
+        document.querySelectorAll(".tab-nav li").forEach((tab) => {
+          tab.addEventListener("click", (e) => {
+            e.preventDefault();
+            const tabId = tab.getAttribute("data-tab");
+            activateTab(tabId);
+          });
+        });
+      });
+    </script>
   </body>
 </html>
